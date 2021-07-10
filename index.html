@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h2 id = "title">Learner Survey Form</h2>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <div class="form-control">
+            <label for="name-label">Full Name *</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your Name" required />
+        </div>
+        <div class="form-control">
+            <label for="email-label">EmailId *</label>
+            <input type="email" name="add" id="address" placeholder="Enter your EmailId" required />
+        </div>
+        <div class="form-control">
+            <label for="number-label">Age <small>(Optional)</small></label>
+        <input type="number" name="number" id="number" placeholder="Enter your Age" min="0" max="100" />
+        </div>
+        <div class="form-control">
+            <label for="role">Which of these best describes your current role?</label>
+            <select name="role" id="dropdown">
+                <option value="current">Select Current Role</option>
+                <option value="student">Student</option>
+                <option value="fulltime">Full-Time</option>
+                <option value="parttime">Part-Time</option>
+                <option value="other">Others</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Would you recommend Learnovate ECommerce to a friend?</label>
+            <label for="radio-1"><input type="radio" id="recom-1" name="recommend" value="yes"/>Yes</label>
+            <label for="radio-2"><input type="radio" id="recom-2" name="recommend" value="no"/>No</label>
+            <label for="radio-3"><input type="radio" id="recom-3" name="recommend" value="maybe"/>Maybe</label>
+        </div>
+        <div class="form-control">
+            <label for="feature">What is your favourite feature of Learnovate ECommerce?</label>
+            <select name="feature" id="dropdown">
+                <option value="sfeature">Select Feature</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="opensource">Open-Source</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>What would you like to see improved? <small>(Check all that apply)</small></label>
+            <label for="checkbox-1"><input type="checkbox" name="improve" id="improve-1" value="improve-1"/>Front-End Projects</label>
+            <label for="checkbox-2"><input type="checkbox" name="improve" id="improve-2" value="improve-2"/>Back-End Projects</label>
+            <label for="checkbox-3"><input type="checkbox" name="improve" id="improve-3" value="improve-3"/>Data Visualization</label>
+            <label for="checkbox-4"><input type="checkbox" name="improve" id="improve-4" value="improve-4"/>Challenges</label>
+            <label for="checkbox-5"><input type="checkbox" name="improve" id="improve-5" value="improve-5"/>Human Resources</label>
+            <label for="checkbox-6"><input type="checkbox" name="improve" id="improve-6" value="improve-6"/>Github</label>
+            <label for="checkbox-7"><input type="checkbox" name="improve" id="improve-7" value="improve-7"/>Open Source Projects</label>
+            <label for="checkbox-8"><input type="checkbox" name="improve" id="improve-8" value="improve-8"/>Communication Skills</label>
+        </div> 
+        <div class="form-control">
+            <label for="comments">Any Comments or Suggestions?</label>
+            <textarea name="comments" id="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
